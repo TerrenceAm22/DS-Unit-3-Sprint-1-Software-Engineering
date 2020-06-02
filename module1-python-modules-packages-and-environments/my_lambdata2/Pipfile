@@ -1,0 +1,25 @@
+[[source]]
+name = "pypi"
+url = "https://pypi.org/simple"
+verify_ssl = true
+
+[dev-packages]
+twine = "*"
+
+[packages]
+pandas = "*"
+numpy = "*"
+matplotlib = "*"
+sklearn = "*"
+jupyterlab = "*"
+category-encoders = "==2.1.0"
+dash = "==1.9.1"
+dash-bootstrap-components = "*"
+gunicorn = "*"
+plotly = "*"
+joblib = "==0.14.1"
+scikit-learn = "==0.21.3"
+xgboost = "==0.90"
+
+[requires]
+python_version = "3.7"
