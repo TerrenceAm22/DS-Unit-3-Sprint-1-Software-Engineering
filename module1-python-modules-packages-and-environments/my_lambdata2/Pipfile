@@ -20,6 +20,7 @@ plotly = "*"
 joblib = "==0.14.1"
 scikit-learn = "==0.21.3"
 xgboost = "==0.90"
+twine = "*"
 
 [requires]
 python_version = "3.7"
