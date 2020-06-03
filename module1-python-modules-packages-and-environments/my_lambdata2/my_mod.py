@@ -1,4 +1,4 @@
-def enlarge(n):
+def split(n):
     """
     Param n is a number
 
