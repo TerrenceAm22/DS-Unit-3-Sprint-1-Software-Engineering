@@ -1,34 +1,37 @@
 from sklearn.model_selection import train_test_split
 
-import pandas
+import pandas as pd
 
 from pandas import DataFrame
+from pandas import crosstab
 
 
-def add_state_names_column(my_df):
+
+def split(df):
     """
-    Add a column of corresponding state names to a dataframe.
+    Param n is a an object
 
-    Params (my_df) a DataFrame with a column called "abbrev" that has state abbrevations
-
-
-    Return a copy of the orginal dataframe, but with an extra column
+    Function will split dates into multiple columns.
     """
-    
-    return my_df
 
-
+    return pd.set_option('display.max_columns', None)
 if __name__ == "__main__":
     df = DataFrame({"abbrev": ["CA", "CO", "CT", "DC", "TX"]})
+    df2 = DataFrame({"abbrev": ["GA", "MN", "VA", "LA", "MA"]})
+   # print(df.head())
+
+    #add_state_names_column(df)
     #print(df.head())
 
-    add_state_names_column(df)
-    #print(df.head())
+print(df)
+y = int(input("Displaying max rows"))
+print(y, split(df))
 
-    train, test = train_test_split(df, random_state=42)
-    print(train)
-    print(test)
+   #train, test = train_test_split(df, random_state=42)
+    #print(train)
+    #print(test)
     
+
     
 
     
