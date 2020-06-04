@@ -7,32 +7,49 @@ from pandas import crosstab
 
 
 
-def split(df):
-    """
-    Param n is a an object
+#def split(df):
+    #"""
+    #Param n is a an object
 
-    Function will split dates into multiple columns.
-    """
+    #Function will split dates into multiple columns.
+    #"""
 
-    return pd.set_option('display.max_columns', None)
+    #return pd.set_option('display.max_columns', None)
+#if __name__ == "__main__":
+   # df = DataFrame({"abbrev": ["CA", "CO", "CT", "DC", "TX"]})
+    #df2 = DataFrame({"abbrev": ["GA", "MN", "VA", "LA", "MA"]})
+
+
+#def train_test_split(df): 
+    #from sklearn.model_selection import train_test_split
+    #train = train_test_split(df)
+    #train, val = train_test_split(train)
+    #return df
+
+
 if __name__ == "__main__":
     df = DataFrame({"abbrev": ["CA", "CO", "CT", "DC", "TX"]})
     df2 = DataFrame({"abbrev": ["GA", "MN", "VA", "LA", "MA"]})
-   # print(df.head())
 
-    #add_state_names_column(df)
-    #print(df.head())
 
-print(df)
-y = int(input("Displaying max rows"))
-print(y, split(df))
 
-   #train, test = train_test_split(df, random_state=42)
+
+    
+
+    
+def traintestsplit():
+
+    """
+    Turning a list into a series
+    """
+    train = train_test_split()
+
+    print(train_test_split(train.head()))
+
+    
+
+
+    #print("Train Test Split", train_test_split(df))
     #print(train)
-    #print(test)
-    
-
-    
-
     
 

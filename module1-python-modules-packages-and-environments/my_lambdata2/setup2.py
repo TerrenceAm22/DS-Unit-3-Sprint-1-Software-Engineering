@@ -13,7 +13,7 @@ setup(
     version="2.0",
     author="Terrence Malone",
     author_email="tamalone87@gmail.com",
-    description="Initial Setup",
+    description="Assignment 1",
     long_description=long_description,
     long_description_content_type="text/markdown",
     #License=""
