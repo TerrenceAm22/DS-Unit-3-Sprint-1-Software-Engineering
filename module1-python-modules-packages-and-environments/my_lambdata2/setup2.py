@@ -9,8 +9,8 @@ with open("README.md", "r") as fh:
 
 
 setup(
-    name="lambdata_TerrenceMaloneII",
-    version="2.5",
+    name="lamddataTJ",
+    version="2.6",
     author="Terrence Malone",
     author_email="tamalone87@gmail.com",
     description="Assignment 1",

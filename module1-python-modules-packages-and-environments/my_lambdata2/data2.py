@@ -1,35 +1,62 @@
-import pandas
+import pandas as pd
 import sklearn
 from sklearn.model_selection import train_test_split
 from pandas import DataFrame
 
+class Helper_Functions:
+    def add_columns(self):
+        """ When in activated it will add a column 
+        into existing dataframe
+        """
+        df = pd.DataFrame({10, 20, 40, 60, 70, 80, 80, 100, 110, 120})
+        names = pd.DataFrame({'Mario', 'Sonic', 'Sly', 'Duke', 'Tails', 'Luigi', 'CaptainMak', 'Crash', 'Knuckles', 'Tupac'})
+        result = df.append(names, sort=False)
+        return df
+    def train_validate_test(self):
+        """ Function will split data into
+        train and test sets for machine learning
+        """
+        df = pd.DataFrame({10, 20, 40, 60, 70, 80, 80, 100, 110})
+        train_test_split(df, test_size=.5)
+        return df.shape
+h = Helper_Functions()
+print(h.train_validate_test())
+print(h.add_columns())
 
-def __init__(self, name):
-    self.name = name
-    return
+class Student:
+    def __init__(self, name, age, grade):
+        self.name = name
+        self.age = age
+        self.grade = grade # 0 - 100
+    def get_grade(self):
+        return self.grade
+
+class Course:
+    def __init__(self, name, max_students):
+        self.name = name
+        self.max_students = max_students
+        self.students = []
+        
+    def add_student(self, student):
+        if len(self.students) < self.max_students:
+            self.students.append(student)
+            return True
+        return False
+    def get_average_grade(self):
+        value = 0
+        for student in self.students:
+            value += student.get_grade()
 
 
-def add_state_names_column(my_df):
-    """
-    Add a column of corresponding state names to a dataframe.
-    A DataFrame with a column called "abbrev" that has state abbrevations.
-    Return a copy of the orginal dataframe, but with an extra column
-    """
-    return my_df
+            return value / len(self.students)
 
 
-def split_data(my_df):
-    train_test_split(my_df, test_size=.80)
-    return my_df
+s1 = Student("Tim", 19, 95)
+s2 = Student("Ashli", 22, 98)
+s3 = Student("Ava", 22, 99)
 
-
-def generate_data(self):
-    my_df = DataFrame.append(df, tj, ignore_index=True)
-    return my_df
-if __name__ == "__main__":
-    df = DataFrame({"abbrev": ["CA", "CO", "CT", "DC", "TX"]})
-    tj = DataFrame({"Added": ["GA", "MS", "NY", "MO"]})
-    data = (10, 20, 50, 80, 100, 110, 100)
-    print(df.head())
-    print(split_data(data))
-    print(generate_data(df))
+course = Course("Math", 2)
+course.add_student(s1)
+course.add_student(s2)
+print(course.students[0].name)
+print(course.get_average_grade())
