@@ -5,7 +5,7 @@ from pandas import DataFrame
 
 class Helper_Functions:
     def add_columns(self):
-        """ When in activated it will add a column 
+        """ When activated it will add a column 
         into existing dataframe
         """
         df = pd.DataFrame({10, 20, 40, 60, 70, 80, 80, 100, 110, 120})
@@ -53,10 +53,10 @@ class Course:
 
 s1 = Student("Tim", 19, 95)
 s2 = Student("Ashli", 22, 98)
-s3 = Student("Ava", 22, 99)
+s3 = Student("Ava", 22, 80)
 
 course = Course("Math", 2)
 course.add_student(s1)
-course.add_student(s2)
-print(course.students[0].name)
+course.add_student(s3)
+print(course.students[1].name)
 print(course.get_average_grade())

@@ -10,7 +10,7 @@ with open("README.md", "r") as fh:
 
 setup(
     name="lamddataTJ",
-    version="2.6",
+    version="3.0",
     author="Terrence Malone",
     author_email="tamalone87@gmail.com",
     description="Assignment 1",
