@@ -10,7 +10,6 @@ class Helper_Functions:
         """
         df = pd.DataFrame({10, 20, 40, 60, 70, 80, 80, 100, 110, 120})
         names = pd.DataFrame({'Mario', 'Sonic', 'Sly', 'Duke', 'Tails', 'Luigi', 'CaptainMak', 'Crash', 'Knuckles', 'Tupac'})
-        result = df.append(names, sort=False)
         return df
     def train_validate_test(self):
         """ Function will split data into
